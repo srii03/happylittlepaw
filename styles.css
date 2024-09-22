@@ -1,114 +1,190 @@
-/* styles.css */
+96.	/* General Reset */
+97.	* {
+98.	    margin: 0;
+99.	    padding: 0;
+100.	    box-sizing: border-box;
+101.	}
+102.	
+103.	/* Body */
+104.	body {
+105.	    font-family: 'Arial', sans-serif;
+106.	    color: #333;
+107.	    background-color: #e6f7ff;
+108.	    overflow-x: hidden;
+109.	    line-height: 1.6;
+110.	}
+111.	
+112.	/* Header */
+113.	header {
+114.	    background: #0056b3;
+115.	    color: #fff;
+116.	    padding: 3rem 0;
+117.	    text-align: center;
+118.	}
+119.	
+120.	/* Hero Image */
+121.	.hero {
+122.	    position: relative;
+123.	    height: 70vh;
+124.	    overflow: hidden;
+125.	}
+126.	
+127.	.slides {
+128.	    height: 100%;
+129.	    position: relative;
+130.	}
+131.	
+132.	.slide {
+133.	    position: absolute;
+134.	    width: 100%;
+135.	    height: 100%;
+136.	    background-size: cover;
+137.	    background-position: center;
+138.	    opacity: 0;
+139.	    transition: opacity 1s ease;
+140.	}
+141.	
+142.	.slide.active {
+143.	    opacity: 1;
+144.	}
+145.	
+146.	.cta-button {
+147.	    display: inline-block;
+148.	    background: #ff6f61;
+149.	    color: #fff;
+150.	    padding: 1rem 2rem;
+151.	    margin-top: 2rem;
+152.	    border-radius: 25px;
+153.	    text-decoration: none;
+154.	    font-size: 1.2rem;
+155.	    font-weight: bold;
+156.	    transition: background 0.3s ease;
+157.	}
+158.	
+159.	.cta-button:hover {
+160.	    background: #ff5c47;
+161.	}
+162.	
+163.	/* Benefit Summary */
+164.	.benefit-summary {
+165.	    background: #fff;
+166.	    padding: 2rem;
+167.	    margin: 2rem auto;
+168.	    text-align: center;
+169.	    border-radius: 15px;
+170.	    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+171.	    max-width: 800px;
+172.	}
+173.	
+174.	.benefits {
+175.	    display: flex;
+176.	    flex-wrap: wrap;
+177.	    justify-content: center;
+178.	    margin: 3rem 0;
+179.	}
+180.	
+181.	.benefit {
+182.	    background: #fff;
+183.	    padding: 1.5rem;
+184.	    margin: 1rem;
+185.	    border-radius: 15px;
+186.	    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+187.	    flex: 1 1 calc(33% - 2rem);
+188.	    text-align: center;
+189.	    transition: transform 0.3s ease, box-shadow 0.3s ease;
+190.	}
+191.	
+192.	.benefit:hover {
+193.	    transform: translateY(-10px);
+194.	    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+195.	}
+196.	
+197.	.icon {
+198.	    width: 100px; /* Set icon size */
+199.	    height: auto;
+200.	    margin-bottom: 1rem; /* Space below icon */
+201.	}
+202.	
+203.	/* Design Diagrams */
+204.	.design-diagrams {
+205.	    text-align: center;
+206.	    margin: 3rem auto;
+207.	}
+208.	
+209.	.design-diagram {
+210.	    width: 80%;
+211.	    height: auto;
+212.	    max-width: 600px;
+213.	    margin-bottom: 2rem;
+214.	}
+215.	
+216.	/* Testing Strategy */
+217.	.testing-strategy, .feedback-activation, .growth-opportunities {
+218.	    text-align: center;
+219.	    margin: 3rem auto;
+220.	    padding: 1rem;
+221.	    background: #fff;
+222.	    border-radius: 15px;
+223.	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+224.	}
+225.	
+226.	/* Contact Section */
+227.	.contact {
+228.	    text-align: center;
+229.	    margin: 3rem auto;
+230.	}
+231.	
+232.	.contact h2 {
+233.	    color: #0056b3;
+234.	}
+235.	
+236.	.contact-options {
+237.	    display: flex;
+238.	    justify-content: center;
+239.	    flex-wrap: wrap;
+240.	}
+241.	
+242.	.contact-option {
+243.	    background: #fff;
+244.	    padding: 1.5rem;
+245.	    margin: 1rem;
+246.	    border-radius: 10px;
+247.	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+248.	    flex: 1 1 200px;
+249.	    text-align: center;
+250.	    transition: transform 0.3s ease;
+251.	}
+252.	
+253.	.contact-option:hover {
+254.	    transform: scale(1.05);
+255.	}
+256.	.video-container {
+257.	    position: relative;
+258.	    max-width: 600px;
+259.	    margin: auto;
+260.	}
+261.	
+262.	video {
+263.	    width: 100%;
+264.	}
+265.	
+266.	.play-button {
+267.	    background-color: #ff6f61;
+268.	    color: #fff;
+269.	    border: none;
+270.	    padding: 1rem 2rem;
+271.	    border-radius: 5px;
+272.	    font-size: 1.5rem;
+273.	    cursor: pointer;
+274.	    margin-top: 1rem;
+275.	}
+276.	
+277.	/* Footer */
+278.	footer {
+279.	    background: #333;
+280.	    color: #fff;
+281.	    padding: 1.5rem;
+282.	    text-align: center;
+283.	    margin-top: 3rem;
+284.	}
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-h1, h2 {
-    margin: 0;
-}
-
-.cta-button {
-    background-color: #fff;
-    color: #4CAF50;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    overflow: hidden;
-    max-height: 500px;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-/* Benefit Summary */
-.benefit-summary {
-    padding: 20px;
-    text-align: center;
-}
-
-.benefits {
-    display: flex;
-    justify-content: space-around;
-}
-
-.benefit {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-}
-
-/* Design Diagrams */
-.design-diagrams {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.design-diagram {
-    max-width: 80%;
-    height: auto;
-}
-
-/* Sections */
-section {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-.contact-options {
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact-option {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-}
