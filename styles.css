@@ -1,211 +1,114 @@
-/* Global Styles */
+/* styles.css */
+
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    transition: background-color 1s ease; /* Smooth transition for background color */
-    background-color: #f0f0f0; /* Default background color */
 }
 
-/* Header and Hero Section */
 header {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-    padding: 0;
-}
-
-.hero-image {
-    background-image: url('https://example.com/path-to-your-pet-image.jpg'); /* Replace with your pet image URL */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    background-blur: 5px;
-}
-
-.hero-text {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
-    border-radius: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding shadow for better text readability */
+    text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 4em;
+h1, h2 {
     margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    animation: fadeIn 2s ease-out;
-    color: #FFD54F; /* Gold color for better contrast */
-}
-
-.hero-text h2 {
-    font-size: 2em;
-    margin: 10px 0 20px;
-    font-family: 'Verdana', sans-serif;
-    animation: fadeIn 2s ease-out;
-    color: #E1BEE7; /* Light purple for a touch of elegance */
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #FF5722; /* Vibrant orange */
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button:hover {
-    background-color: #FF7043; /* Darker orange for hover effect */
-    transform: scale(1.05);
-}
-
-/* Main Section Styles */
-main {
-    padding: 20px;
-    background-image: url('https://example.com/path-to-your-background-image.jpg'); /* Replace with a subtle background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-section {
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 800px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    animation: fadeIn 2s ease-out;
-}
-
-#benefits {
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    background-image: url('https://example.com/path-to-your-paw-pattern.jpg'); /* Replace with a subtle paw pattern */
-    background-size: cover;
-}
-
-.benefit-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.benefit-item {
-    background: rgba(255, 255, 255, 0.8); /* Light background for benefit items */
-    margin: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%;
-    text-align: center;
-    font-size: 1.2em;
-    color: #006064; /* Darker blue for text */
-}
-
-#testimonials {
-    background-color: #f1f8e9;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.testimonial {
-    margin-bottom: 20px;
-    font-style: italic;
-    color: #555; /* Slightly darker text color */
-}
-
-.testimonial cite {
-    display: block;
     font-weight: bold;
-    margin-top: 10px;
-    color: #333;
 }
 
-#cta {
-    text-align: center;
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Benefit Summary */
+.benefit-summary {
     padding: 20px;
-    border-radius: 10px;
-    background-color: #FFEB3B; /* Bright yellow */
+    text-align: center;
 }
 
-#cta h3 {
-    margin: 0 0 20px;
-    color: #F57F17; /* Darker yellow for contrast */
+.benefits {
+    display: flex;
+    justify-content: space-around;
 }
 
+.benefit {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Design Diagrams */
+.design-diagrams {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.design-diagram {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-option {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.5em;
-    }
-
-    .hero-text h2 {
-        font-size: 1.5em;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-
-    .benefit-item {
-        flex: 1 1 100%;
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 2em;
-    }
-
-    .hero-text h2 {
-        font-size: 1.2em;
-    }
-
-    .cta-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
-    }
-
-    .benefit-item {
-        font-size: 0.9em;
-    }
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    background-color: #4CAF50;
+    color: white;
 }
