@@ -1,190 +1,376 @@
-96.	/* General Reset */
-97.	* {
-98.	    margin: 0;
-99.	    padding: 0;
-100.	    box-sizing: border-box;
-101.	}
-102.	
-103.	/* Body */
-104.	body {
-105.	    font-family: 'Arial', sans-serif;
-106.	    color: #333;
-107.	    background-color: #e6f7ff;
-108.	    overflow-x: hidden;
-109.	    line-height: 1.6;
-110.	}
-111.	
-112.	/* Header */
-113.	header {
-114.	    background: #0056b3;
-115.	    color: #fff;
-116.	    padding: 3rem 0;
-117.	    text-align: center;
-118.	}
-119.	
-120.	/* Hero Image */
-121.	.hero {
-122.	    position: relative;
-123.	    height: 70vh;
-124.	    overflow: hidden;
-125.	}
-126.	
-127.	.slides {
-128.	    height: 100%;
-129.	    position: relative;
-130.	}
-131.	
-132.	.slide {
-133.	    position: absolute;
-134.	    width: 100%;
-135.	    height: 100%;
-136.	    background-size: cover;
-137.	    background-position: center;
-138.	    opacity: 0;
-139.	    transition: opacity 1s ease;
-140.	}
-141.	
-142.	.slide.active {
-143.	    opacity: 1;
-144.	}
-145.	
-146.	.cta-button {
-147.	    display: inline-block;
-148.	    background: #ff6f61;
-149.	    color: #fff;
-150.	    padding: 1rem 2rem;
-151.	    margin-top: 2rem;
-152.	    border-radius: 25px;
-153.	    text-decoration: none;
-154.	    font-size: 1.2rem;
-155.	    font-weight: bold;
-156.	    transition: background 0.3s ease;
-157.	}
-158.	
-159.	.cta-button:hover {
-160.	    background: #ff5c47;
-161.	}
-162.	
-163.	/* Benefit Summary */
-164.	.benefit-summary {
-165.	    background: #fff;
-166.	    padding: 2rem;
-167.	    margin: 2rem auto;
-168.	    text-align: center;
-169.	    border-radius: 15px;
-170.	    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-171.	    max-width: 800px;
-172.	}
-173.	
-174.	.benefits {
-175.	    display: flex;
-176.	    flex-wrap: wrap;
-177.	    justify-content: center;
-178.	    margin: 3rem 0;
-179.	}
-180.	
-181.	.benefit {
-182.	    background: #fff;
-183.	    padding: 1.5rem;
-184.	    margin: 1rem;
-185.	    border-radius: 15px;
-186.	    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-187.	    flex: 1 1 calc(33% - 2rem);
-188.	    text-align: center;
-189.	    transition: transform 0.3s ease, box-shadow 0.3s ease;
-190.	}
-191.	
-192.	.benefit:hover {
-193.	    transform: translateY(-10px);
-194.	    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-195.	}
-196.	
-197.	.icon {
-198.	    width: 100px; /* Set icon size */
-199.	    height: auto;
-200.	    margin-bottom: 1rem; /* Space below icon */
-201.	}
-202.	
-203.	/* Design Diagrams */
-204.	.design-diagrams {
-205.	    text-align: center;
-206.	    margin: 3rem auto;
-207.	}
-208.	
-209.	.design-diagram {
-210.	    width: 80%;
-211.	    height: auto;
-212.	    max-width: 600px;
-213.	    margin-bottom: 2rem;
-214.	}
-215.	
-216.	/* Testing Strategy */
-217.	.testing-strategy, .feedback-activation, .growth-opportunities {
-218.	    text-align: center;
-219.	    margin: 3rem auto;
-220.	    padding: 1rem;
-221.	    background: #fff;
-222.	    border-radius: 15px;
-223.	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-224.	}
-225.	
-226.	/* Contact Section */
-227.	.contact {
-228.	    text-align: center;
-229.	    margin: 3rem auto;
-230.	}
-231.	
-232.	.contact h2 {
-233.	    color: #0056b3;
-234.	}
-235.	
-236.	.contact-options {
-237.	    display: flex;
-238.	    justify-content: center;
-239.	    flex-wrap: wrap;
-240.	}
-241.	
-242.	.contact-option {
-243.	    background: #fff;
-244.	    padding: 1.5rem;
-245.	    margin: 1rem;
-246.	    border-radius: 10px;
-247.	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-248.	    flex: 1 1 200px;
-249.	    text-align: center;
-250.	    transition: transform 0.3s ease;
-251.	}
-252.	
-253.	.contact-option:hover {
-254.	    transform: scale(1.05);
-255.	}
-256.	.video-container {
-257.	    position: relative;
-258.	    max-width: 600px;
-259.	    margin: auto;
-260.	}
-261.	
-262.	video {
-263.	    width: 100%;
-264.	}
-265.	
-266.	.play-button {
-267.	    background-color: #ff6f61;
-268.	    color: #fff;
-269.	    border: none;
-270.	    padding: 1rem 2rem;
-271.	    border-radius: 5px;
-272.	    font-size: 1.5rem;
-273.	    cursor: pointer;
-274.	    margin-top: 1rem;
-275.	}
-276.	
-277.	/* Footer */
-278.	footer {
-279.	    background: #333;
-280.	    color: #fff;
-281.	    padding: 1.5rem;
-282.	    text-align: center;
-283.	    margin-top: 3rem;
-284.	}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Landing Page with Video */
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 90%; /* Adjust this value to move the button up */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem; /* Reduced padding to make the button smaller */
+    background: #AF8260;
+    color: #E4C59E;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+.cta-button:hover {
+    background: #803D3B;
+}
+
+/* Benefit Summary */
+.benefit-summary {
+    background: #F4EFE9;
+    text-align: center;
+    padding: 2rem;
+}
+
+.benefit-summary h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #AF8260;
+}
+
+.benefit-summary p {
+    font-size: 1.2rem;
+    color: #322C2B;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem;
+    background: #F4EFE9;
+    text-align: center;
+}
+
+.benefit-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit {
+    background: #AF8260;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 30%;
+    box-shadow: 0 6px 12px rgba(128, 61, 59, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(128, 61, 59, 0.3);
+}
+
+/* Preorder Section Styles */
+.pre-order {
+    background: #E4C59E;
+    padding: 3rem;
+    text-align: center; /* Center text alignment */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto; /* Center the section and add margin */
+    max-width: 600px; /* Limit width for better readability */
+}
+
+.preorder-heading {
+    font-size: 2.5rem;
+    color: #322C2B;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Add font weight for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+.preorder-description {
+    font-size: 1.3rem;
+    color: #322C2B;
+    margin-bottom: 2rem;
+    line-height: 1.5; /* Improve readability */
+}
+
+.offer-text {
+    font-size: 1.5rem;
+    color: #AF8260;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.countdown-timer {
+    font-size: 2rem;
+    color: #FFFFFF; /* White color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    padding: 0.5rem 1rem; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 1rem;
+    animation: pulse 1.5s infinite; /* Add subtle animation */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.email-input {
+    padding: 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #AF8260;
+    width: 250px; /* Fixed width */
+    max-width: 100%; /* Ensure responsiveness */
+    display: inline-block; /* Aligns input properly */
+}
+
+.preorder-button {
+    background: #AF8260;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.1rem; /* Slightly increase font size */
+}
+
+.preorder-button:hover {
+    background: #803D3B; /* Darker shade on hover */
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #322C2B;
+    line-height: 1.5; /* Improve readability */
+    text-align: center; /* Center align contact info */
+}
+
+/* Contact Section Styles */
+.contact {
+    background: #AF8260;
+    padding: 2rem;
+    color: #E4C59E;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-link {
+    color: #E4C59E;
+    text-decoration: underline;
+}
+
+.contact-phone {
+    color: #E4C59E;
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #322C2B; /* Dark background color */
+    padding: 1rem; /* Spacing around the navbar */
+    text-align: center; /* Center the text */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the list items */
+}
+
+.nav-list li {
+    margin: 0 1.5rem; /* Spacing between items */
+}
+
+.nav-link {
+    color: #E4C59E; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Font size */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.nav-link:hover {
+    color: #AF8260; /* Change color on hover */
+}
+/* Preorder Form Styles */
+.preorder-form-container {
+    background: #F4EFE9; /* Light background color */
+    padding: 2rem;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 2rem auto; /* Center the form */
+}
+
+.preorder-form-heading {
+    font-size: 2.5rem; /* Font size for heading */
+    color: #AF8260; /* Main color */
+    margin-bottom: 1.5rem; /* Space below heading */
+    text-align: center; /* Center text */
+}
+
+.preorder-form-group {
+    margin-bottom: 1.5rem; /* Space between form fields */
+}
+
+.preorder-form-label {
+    display: block; /* Make label block to occupy full width */
+    font-size: 1.1rem; /* Label font size */
+    color: #322C2B; /* Dark color for contrast */
+    margin-bottom: 0.5rem; /* Space below label */
+}
+
+.preorder-form-input {
+    width: 100%; /* Full width */
+    padding: 0.8rem; /* Padding for better touch target */
+    border: 1px solid #AF8260; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.preorder-form-input:focus {
+    outline: none; /* Remove outline */
+    border-color: #803D3B; /* Change border color on focus */
+}
+
+.preorder-form-select {
+    width: 100%; /* Full width */
+    padding: 0.8rem; /* Padding for better touch target */
+    border: 1px solid #AF8260; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.preorder-form-select:focus {
+    outline: none; /* Remove outline */
+    border-color: #803D3B; /* Change border color on focus */
+}
+
+.preorder-form-button {
+    background: #AF8260; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.8rem 1.5rem; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.2rem; /* Font size */
+    transition: background 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width */
+}
+
+.preorder-form-button:hover {
+    background: #803D3B; /* Darker shade on hover */
+}
+
+/* Additional styles for placeholders */
+::placeholder {
+    color: #AF8260; /* Placeholder color */
+    opacity: 0.7; /* Slightly faded */
+}
+/* Offer Ends Styles */
+.offer-ends-section {
+    background: #F4EFE9; /* Light background color */
+    padding: 2rem; /* Padding around the section */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 2rem; /* Space above the section */
+    text-align: center; /* Center text */
+}
+
+.offer-ends-heading {
+    font-size: 2.5rem; /* Heading font size */
+    color: #322C2B; /* Dark color */
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+.offer-ends-timer {
+    font-size: 2rem; /* Timer font size */
+    color: #803D3B; /* Timer color */
+    margin-bottom: 1rem; /* Space below timer */
+}
+
+.offer-ends-description {
+    font-size: 1.3rem; /* Description font size */
+    color: #322C2B; /* Dark color for contrast */
+    margin-bottom: 1.5rem; /* Space below description */
+}
+
+.contact-info {
+    font-size: 1.1rem; /* Font size for contact info */
+    color: #322C2B; /* Dark color for contrast */
+    margin-top: 1rem; /* Space above contact info */
+}
+
+.contact-link {
+    color: #AF8260; /* Color for email link */
+    text-decoration: underline; /* Underline for emphasis */
+}
+.confirmation-message {
+    background-color: #E4C59E; /* Light beige background */
+    border: 2px solid #AF8260; /* Warm brown border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the text */
+    margin: 20px auto; /* Center the message with margin */
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    text-align: center; /* Center text alignment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+.confirmation-message h3 {
+    color: #803D3B; /* Dark reddish-brown for heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.confirmation-message p {
+    color: #322C2B; /* Very dark brown for text */
+    line-height: 1.5; /* Improved line height for readability */
+}
 
